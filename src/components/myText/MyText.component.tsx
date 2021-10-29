@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
-import { FONT_SIZE, SPACING } from "../assets/themes/globla.theme";
+import { FONT_SIZE, SPACING } from "../../assets/themes/globla.theme";
 
 const TEXT_STYLE = {
     normal: "normal",

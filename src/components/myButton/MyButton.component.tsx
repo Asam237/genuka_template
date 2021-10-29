@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { SPACING } from "../../assets/themes/globla.theme";
-import { MyText } from "../MyText.component";
+import { MyText } from "../myText/MyText.component";
 
 export const MyButton = (props: any) => {
     return (
