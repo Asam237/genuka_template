@@ -21,7 +21,7 @@ const changeByVariant = (variant: any) => {
 }
 
 export const MyText = (props: any) => {
-    return <Text style={[changeByVariant(props.myVariant), { color: props.myColor, textAlign: props.myTextAlign }]}>{props.myText}</Text>
+    return <Text style={[changeByVariant(props.myVariant), { color: props.myColor, textAlign: props.myTextAlign, fontWeight: props.myFontWeight, marginVertical: props.myMarginVertical }]}>{props.myText}</Text>
 }
 
 const styles = StyleSheet.create({
@@ -30,10 +30,8 @@ const styles = StyleSheet.create({
     },
     subTitle: {
         fontSize: FONT_SIZE.subTitle,
-        fontWeight: 'bold'
     },
     title: {
         fontSize: FONT_SIZE.title,
-        fontWeight: 'bold'
     }
 })

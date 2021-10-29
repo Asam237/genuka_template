@@ -4,11 +4,19 @@ export const SPACING = {
     xmedium: 15,
     medium: 20,
     xlarge: 24,
-    large: 30
+    large: 30,
+    full: '100%'
 }
 
 export const FONT_SIZE = {
     normal: 14,
-    subTitle: 20,
+    subTitle: 18,
     title: 25,
+}
+
+export const COLORS = {
+    primaryColor: "#FF5351",
+    secondaryColor: "#FFFFFF",
+    textColor: "#1B1B1B"
+
 }

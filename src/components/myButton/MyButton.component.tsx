@@ -6,7 +6,7 @@ import { MyText } from "../myText/MyText.component";
 
 export const MyButton = (props: any) => {
     return (
-        <View style={[styles.container, { backgroundColor: props.myButtonColor }]}>
+        <View style={[styles.container, { backgroundColor: props.myButtonColor, borderRadius: props.myBorderRadius }]}>
             <TouchableOpacity onPress={() => props.myNavigation()}>
                 <MyText myText={props.myButtonText} myColor={props.myButtonTextColor} />
             </TouchableOpacity>
@@ -19,6 +19,5 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: SPACING.medium
     }
 })
