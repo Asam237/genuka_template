@@ -1,0 +1,14 @@
+com/genuka_template/ReactNativeFlipper.java
+ com.genuka_template.ReactNativeFlipper
+ com.genuka_template.ReactNativeFlipper$1
+ com.genuka_template.ReactNativeFlipper$2
+ com.genuka_template.ReactNativeFlipper$2$1
+com/genuka_template/MainActivity.java
+ com.genuka_template.MainActivity
+com/genuka_template/MainApplication.java
+ com.genuka_template.MainApplication
+ com.genuka_template.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/genuka_template/BuildConfig.java
+ com.genuka_template.BuildConfig
