@@ -7,7 +7,7 @@ import ShoppingBag from "../../assets/img/shopping.png"
 import { LANGUAGES } from "../../constants/languages";
 import { COLORS, SPACING } from "../../assets/themes/globla.theme";
 
-const IMAGE_SIZE = 150
+const IMAGE_SIZE = 155
 
 export const Welcome = (navigation: any) => {
     return (
@@ -18,7 +18,7 @@ export const Welcome = (navigation: any) => {
                 </View>
                 <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center' }}>
                     <MyText myFontWeight="bold" myText={LANGUAGES.welcome.title} myVariant="title" />
-                    <MyText myMarginVertical={SPACING.medium} myTextAlign="center" myText={LANGUAGES.welcome.subTitle} myVariant="subTitle" />
+                    <MyText myLineHeight={SPACING.large} myMarginVertical={SPACING.medium} myTextAlign="center" myText={LANGUAGES.welcome.subTitle} myVariant="subTitle" />
                     <View style={{ height: 50, width: 150 }}>
                         <MyButton myBorderRadius={50 / 2} myNavigation={() => navigation.navigation.navigate("home")} myButtonColor={COLORS.primaryColor} myButtonTextColor={COLORS.secondaryColor} myButtonText={LANGUAGES.welcome.started} />
                     </View>

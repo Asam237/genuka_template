@@ -11,7 +11,7 @@ export const SPACING = {
 export const FONT_SIZE = {
     normal: 14,
     subTitle: 18,
-    title: 25,
+    title: 28,
 }
 
 export const COLORS = {
