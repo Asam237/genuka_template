@@ -23,6 +23,13 @@ export const AuthNavigation = () => {
                         header: () => null
                     }}
                 />
+                <Stack.Screen
+                    name={ROUTES.login.name}
+                    component={ROUTES.login.component}
+                    options={{
+                        header: () => null
+                    }}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     )

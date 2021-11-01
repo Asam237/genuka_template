@@ -20,7 +20,7 @@ export const Welcome = (navigation: any) => {
                     <MyText myFontWeight="bold" myText={LANGUAGES.welcome.title} myVariant="title" />
                     <MyText myLineHeight={SPACING.large} myMarginVertical={SPACING.medium} myTextAlign="center" myText={LANGUAGES.welcome.subTitle} myVariant="subTitle" />
                     <View style={{ height: 50, width: 150 }}>
-                        <MyButton myBorderRadius={50 / 2} myNavigation={() => navigation.navigation.navigate("home")} myButtonColor={COLORS.primaryColor} myButtonTextColor={COLORS.secondaryColor} myButtonText={LANGUAGES.welcome.started} />
+                        <MyButton myBorderRadius={50 / 2} myNavigation={() => navigation.navigation.navigate("login")} myButtonColor={COLORS.primaryColor} myButtonTextColor={COLORS.secondaryColor} myButtonText={LANGUAGES.welcome.started} />
                     </View>
                 </View>
             </AppLayout>
