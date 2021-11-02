@@ -19,7 +19,7 @@ export const Signup = (navigation: any) => {
                         <MyButton myBorderRadius={60 / 2} myNavigation={() => navigation.navigation.navigate("home")} myButtonColor={COLORS.primaryColor} myButtonTextColor={COLORS.secondaryColor} myButtonText={LANGUAGES.login.signupTitle} />
                     </View>
                     <View style={{ width: SPACING.full, flexDirection: 'row', height: 50, marginTop: SPACING.small }}>
-                        <MyButton myBorderRadius={60 / 2} myNavigation={() => navigation.navigation.navigate("login")} myButtonColor={COLORS.secondaryColor} myButtonTextColor="#000" myButtonText={LANGUAGES.login.signupTitle} myBorderColor={COLORS.primaryColor} myBorderWidth={1} />
+                        <MyButton myBorderRadius={60 / 2} myNavigation={() => navigation.navigation.navigate("login")} myButtonColor={COLORS.secondaryColor} myButtonTextColor="#000" myButtonText={LANGUAGES.login.login} myBorderColor={COLORS.primaryColor} myBorderWidth={1} />
                     </View>
                 </View>
             </AppLayout>
