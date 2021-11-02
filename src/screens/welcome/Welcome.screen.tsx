@@ -19,7 +19,7 @@ export const Welcome = (navigation: any) => {
                 <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center' }}>
                     <MyText myFontWeight="bold" myText={LANGUAGES.welcome.title} myVariant="title" />
                     <MyText myLineHeight={SPACING.large} myMarginVertical={SPACING.medium} myTextAlign="center" myText={LANGUAGES.welcome.subTitle} myVariant="subTitle" />
-                    <View style={{ height: 50, width: 150 }}>
+                    <View style={{ width: SPACING.full, flexDirection: 'row', paddingHorizontal: SPACING.xlarge, height: 50 }}>
                         <MyButton myBorderRadius={50 / 2} myNavigation={() => navigation.navigation.navigate("login")} myButtonColor={COLORS.primaryColor} myButtonTextColor={COLORS.secondaryColor} myButtonText={LANGUAGES.welcome.started} />
                     </View>
                 </View>

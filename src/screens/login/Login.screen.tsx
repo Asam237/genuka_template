@@ -3,6 +3,8 @@ import { Text, SafeAreaView, View, StatusBar, StyleSheet } from "react-native";
 import { COLORS, SPACING } from "../../assets/themes/globla.theme";
 import { MyButton } from "../../components/myButton/MyButton.component";
 import { MyInput } from "../../components/myInput/MyInput.component";
+import { MyText } from "../../components/myText/MyText.component";
+import { LANGUAGES } from "../../constants/languages";
 import { AppLayout } from "../layout/app.layout";
 
 const HEADER_HEIGHT = 180;
@@ -12,6 +14,8 @@ export const Login = () => {
         <SafeAreaView style={styles.container}>
             <StatusBar backgroundColor={COLORS.primaryColor} />
             <View style={styles.container__header}>
+                <MyText myVariant="title" myColor={COLORS.secondaryColor} myText="Login" />
+                <MyText myMarginVertical={SPACING.small} myLineHeight={SPACING.xlarge} myVariant="subTitle" myColor={COLORS.secondaryColor} myText={LANGUAGES.welcome.subTitle} />
             </View>
             <View style={styles.container__items}>
                 <MyInput myPlaceHolder="username" />
@@ -28,14 +32,15 @@ const styles = StyleSheet.create({
     },
     container__header: {
         backgroundColor: COLORS.primaryColor,
-        flex: 1
+        flex: 1,
+        padding: SPACING.medium
     },
     container__items: {
-        alignItems: 'flex-start',
+        flex: 3,
+        alignItems: 'center',
         flexDirection: 'column',
         justifyContent: 'center',
-        flex: 3,
-        paddingHorizontal: SPACING.small,
-        width: SPACING.full
+        paddingHorizontal: SPACING.medium,
+        width: SPACING.full,
     }
 })

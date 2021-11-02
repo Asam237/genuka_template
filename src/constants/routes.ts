@@ -1,5 +1,5 @@
 import { Home } from "../screens/home/Home.screen";
-import { Login } from "../screens/login/Login.component";
+import { Login } from "../screens/login/Login.screen";
 import { Welcome } from "../screens/welcome/Welcome.screen";
 
 interface IRouteItem {
