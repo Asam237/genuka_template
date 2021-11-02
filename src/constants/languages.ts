@@ -8,6 +8,8 @@ export const LANGUAGES = {
         login: "Login",
         username: "username",
         password: "password",
-        signup: "Sign Up to create an account"
+        signup: "Sign Up to create an account",
+        signupTitle: "Sign Up",
+        mail: "Email"
     }
 }
