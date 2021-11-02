@@ -20,7 +20,9 @@ export const Login = () => {
             <View style={styles.container__items}>
                 <MyInput myPlaceHolder="username" />
                 <MyInput myMarginTop={SPACING.xmedium} myPlaceHolder="username" />
-                <MyButton />
+                <View style={{ width: SPACING.full, flexDirection: 'row', height: 50, marginTop: SPACING.xlarge }}>
+                    <MyButton myBorderRadius={60 / 2} myNavigation={() => navigation.navigation.navigate("login")} myButtonColor={COLORS.primaryColor} myButtonTextColor={COLORS.secondaryColor} myButtonText={LANGUAGES.welcome.started} />
+                </View>
             </View>
         </SafeAreaView >
     )
@@ -33,7 +35,9 @@ const styles = StyleSheet.create({
     container__header: {
         backgroundColor: COLORS.primaryColor,
         flex: 1,
-        padding: SPACING.medium
+        padding: SPACING.medium,
+        borderBottomLeftRadius: SPACING.large,
+        borderBottomRightRadius: SPACING.large
     },
     container__items: {
         flex: 3,
