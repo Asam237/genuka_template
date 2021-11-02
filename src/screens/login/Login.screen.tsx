@@ -11,6 +11,9 @@ import { AppLayout } from "../layout/app.layout";
 const HEADER_HEIGHT = 180;
 
 export const Login = (navigation: any) => {
+    const toSignup = () => {
+        return navigation.navigation.navigate("signup")
+    }
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar backgroundColor={COLORS.primaryColor} />
@@ -29,7 +32,7 @@ export const Login = (navigation: any) => {
                     <MyText myText="Or" myMarginHorizontal={10} myMarginVertical={10} />
                     <View style={styles.container__line} />
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => toSignup()}>
                     <MyText myVariant="normal" myText={LANGUAGES.login.signup} />
                 </TouchableOpacity>
             </View>

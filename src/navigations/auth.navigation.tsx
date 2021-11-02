@@ -30,6 +30,13 @@ export const AuthNavigation = () => {
                         header: () => null
                     }}
                 />
+                <Stack.Screen
+                    name={ROUTES.signup.name}
+                    component={ROUTES.signup.component}
+                    options={{
+                        header: () => null
+                    }}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     )
