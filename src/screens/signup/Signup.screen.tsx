@@ -6,7 +6,7 @@ import { MyInput } from "../../components/myInput/MyInput.component";
 import { LANGUAGES } from "../../constants/languages";
 import { AppLayout } from "../layout/app.layout";
 
-const BUTTON_SIZE = 60;
+export const BUTTON_SIZE = 60;
 
 export const Signup = (navigation: any) => {
   return (
