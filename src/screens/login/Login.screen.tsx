@@ -20,14 +20,15 @@ export const Login = (navigation: any) => {
       <StatusBar backgroundColor={COLORS.primaryColor} />
       <View style={styles.container__header}>
         <MyText
-          myVariant="title"
+          myVariant="subTitle"
+          myFontWeight="bold"
           myColor={COLORS.secondaryColor}
           myText={LANGUAGES.login.login}
         />
         <MyText
           myMarginVertical={SPACING.small}
           myLineHeight={SPACING.xlarge}
-          myVariant="subTitle"
+          myVariant="normal"
           myColor={COLORS.secondaryColor}
           myText={LANGUAGES.welcome.subTitle}
         />
@@ -35,7 +36,7 @@ export const Login = (navigation: any) => {
       <View style={styles.container__items}>
         <MyInput myPlaceHolder={LANGUAGES.login.username} />
         <MyInput
-          myMarginTop={SPACING.xmedium}
+          myMarginTop={SPACING.xlarge}
           myPlaceHolder={LANGUAGES.login.password}
         />
         <View
@@ -43,7 +44,7 @@ export const Login = (navigation: any) => {
             width: SPACING.full,
             flexDirection: "row",
             height: 50,
-            marginTop: SPACING.xlarge,
+            marginTop: SPACING.large,
           }}
         >
           <MyButton
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
   },
   container__header: {
     backgroundColor: COLORS.primaryColor,
-    flex: 1,
+    flex: 2 / 3,
     padding: SPACING.medium,
     borderBottomLeftRadius: SPACING.large,
     borderBottomRightRadius: SPACING.large,
