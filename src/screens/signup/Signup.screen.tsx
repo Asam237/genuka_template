@@ -14,13 +14,16 @@ export const Signup = (navigation: any) => {
       <StatusBar backgroundColor={COLORS.primaryColor} />
       <AppLayout>
         <View style={styles.container__items}>
-          <MyInput myPlaceHolder={LANGUAGES.login.username} />
           <MyInput
-            myMarginTop={SPACING.xmedium}
+            myMarginTop={SPACING.large}
+            myPlaceHolder={LANGUAGES.login.username}
+          />
+          <MyInput
+            myMarginTop={SPACING.xlarge}
             myPlaceHolder={LANGUAGES.login.mail}
           />
           <MyInput
-            myMarginTop={SPACING.xmedium}
+            myMarginTop={SPACING.xlarge}
             myPlaceHolder={LANGUAGES.login.password}
           />
           <View
@@ -28,7 +31,7 @@ export const Signup = (navigation: any) => {
               width: SPACING.full,
               flexDirection: "row",
               height: 50,
-              marginTop: SPACING.xlarge,
+              marginTop: SPACING.large,
             }}
           >
             <MyButton
@@ -44,7 +47,7 @@ export const Signup = (navigation: any) => {
               width: SPACING.full,
               flexDirection: "row",
               height: 50,
-              marginTop: SPACING.small,
+              marginTop: SPACING.medium,
             }}
           >
             <MyButton
@@ -68,7 +71,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   container__items: {
-    flex: 3,
+    marginTop: SPACING.large,
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "center",
