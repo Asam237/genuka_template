@@ -12,6 +12,7 @@ MERGED from [:react-native-gesture-handler] /home/asam/Workspaces/RN/genuka_temp
 MERGED from [:react-native-safe-area-context] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-svg] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-svg/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.66.0] /home/asam/.gradle/caches/transforms-3/548e983e2fa4cfa186578c41faedaeae/transformed/jetified-react-native-0.66.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/asam/.gradle/caches/transforms-3/9341f36f0ce470d4b55127e33c2ce075/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] /home/asam/.gradle/caches/transforms-3/7873a5158addb5bf75ec8bc5226b9f2a/transformed/jetified-android-jsc-r250230/AndroidManifest.xml:2:1-11:12
@@ -171,6 +172,8 @@ MERGED from [:react-native-screens] /home/asam/Workspaces/RN/genuka_template/nod
 MERGED from [:react-native-screens] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-svg] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-svg/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-svg] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-svg/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /home/asam/Workspaces/RN/genuka_template/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.66.0] /home/asam/.gradle/caches/transforms-3/548e983e2fa4cfa186578c41faedaeae/transformed/jetified-react-native-0.66.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.66.0] /home/asam/.gradle/caches/transforms-3/548e983e2fa4cfa186578c41faedaeae/transformed/jetified-react-native-0.66.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/asam/.gradle/caches/transforms-3/9341f36f0ce470d4b55127e33c2ce075/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44

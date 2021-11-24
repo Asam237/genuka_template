@@ -8,7 +8,7 @@ com/genuka_template/MainActivity.java
 com/genuka_template/MainApplication.java
  com.genuka_template.MainApplication
  com.genuka_template.MainApplication$1
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
 com/genuka_template/BuildConfig.java
  com.genuka_template.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

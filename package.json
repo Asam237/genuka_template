@@ -15,7 +15,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-native-fontawesome": "^0.2.7",
-    "@react-navigation/bottom-tabs": "^6.0.8",
+    "@react-navigation/bottom-tabs": "^6.0.9",
     "@react-navigation/native": "^6.0.4",
     "@react-navigation/native-stack": "^6.2.2",
     "@react-navigation/stack": "^5.14.5",
@@ -27,10 +27,15 @@
     "react-native": "0.66.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-loading-spinner-overlay": "^2.0.0",
+    "react-native-material-bottom-navigation": "^1.0.5",
+    "react-native-paper": "^4.10.1",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.8.0",
     "react-native-svg": "^12.1.1",
-    "react-native-toast-message": "^1.6.0"
+    "react-native-toast-message": "^1.6.0",
+    "react-native-vector-icons": "^9.0.0",
+    "react-navigation": "^4.4.4",
+    "react-navigation-material-bottom-tabs": "^2.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
