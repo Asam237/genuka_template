@@ -25,6 +25,7 @@ export const Welcome = (navigation: any) => {
             myTextAlign="center"
             myText={LANGUAGES.welcome.titleApp}
             myVariant="subTitle"
+            fontSize={18}
             width={140}
           />
         </View>
@@ -47,7 +48,8 @@ export const Welcome = (navigation: any) => {
             myFontWeight="bold"
             myText={LANGUAGES.welcome.title}
             myVariant="subTitle"
-            width={200}
+            fontSize={22}
+            myTextAlign="center"
           />
           <MyText
             myLineHeight={SPACING.large}
