@@ -6,7 +6,6 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 import { Items } from "../screens/items/Items.screen";
 
 const Tab = createBottomTabNavigator();
