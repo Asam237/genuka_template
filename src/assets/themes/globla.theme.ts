@@ -18,6 +18,6 @@ export const COLORS = {
     primaryColor: "#FF5351",
     secondaryColor: "#FFFFFF",
     textColor: "#1B1B1B",
-    black: "#20170C"
+    black: "#2B2919"
 
 }

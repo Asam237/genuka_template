@@ -5,7 +5,8 @@ import { AppLayout } from "../layout/app.layout";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { COLORS } from "../../assets/themes/globla.theme";
+import { COLORS, SPACING } from "../../assets/themes/globla.theme";
+import { MyText } from "../../components/myText/MyText.component";
 
 export const Items = () => {
   return (
@@ -26,6 +27,22 @@ export const Items = () => {
           />
         </TouchableOpacity>
       </View>
+      <View style={styles.container__header__name}>
+        <MyText
+          variant="title"
+          myColor={COLORS.black}
+          myFontWeight="bold"
+          myText="Hello Abba Sali"
+          fontSize={20}
+          marginVertical={2}
+        />
+        <MyText
+          fontSize={14}
+          variant="subTitle"
+          myColor="#504C47"
+          myText="Lets gets somethings?"
+        />
+      </View>
     </AppLayout>
   );
 };
@@ -35,5 +52,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    marginTop: SPACING.small,
+  },
+  container__header__name: {
+    marginVertical: SPACING.xlarge,
   },
 });

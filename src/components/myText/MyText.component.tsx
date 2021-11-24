@@ -33,6 +33,7 @@ export const MyText = (props: any) => {
           marginVertical: props.myMarginVertical,
           lineHeight: props.myLineHeight,
           width: props.width,
+          fontSize: props.fontSize,
         },
       ]}
     >
