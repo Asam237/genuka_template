@@ -7,6 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { COLORS, SPACING } from "../../assets/themes/globla.theme";
 import { MyText } from "../../components/myText/MyText.component";
+import { Publicity } from "../../components/publicity/Publicity.component";
 
 export const Items = () => {
   return (
@@ -42,6 +43,9 @@ export const Items = () => {
           myColor="#504C47"
           myText="Lets gets somethings?"
         />
+      </View>
+      <View>
+        <Publicity />
       </View>
     </AppLayout>
   );

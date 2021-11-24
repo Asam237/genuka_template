@@ -5,19 +5,34 @@ import { SPACING } from "../../assets/themes/globla.theme";
 import { MyText } from "../myText/MyText.component";
 
 export const MyButton = (props: any) => {
-    return (
-        <View style={[styles.container, { backgroundColor: props.myButtonColor, borderRadius: props.myBorderRadius, borderColor: props.myBorderColor, borderWidth: props.myBorderWidth }]}>
-            <TouchableOpacity onPress={() => props.myNavigation()}>
-                <MyText myText={props.myButtonText} myColor={props.myButtonTextColor} />
-            </TouchableOpacity>
-        </View>
-    )
-}
+  return (
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: props.myButtonColor,
+          borderRadius: props.myBorderRadius,
+          borderColor: props.myBorderColor,
+          borderWidth: props.myBorderWidth,
+        },
+      ]}
+    >
+      <TouchableOpacity onPress={() => props.myNavigation()}>
+        <MyText
+          myText={props.myButtonText}
+          myColor={props.myButtonTextColor}
+          fontSize={props.fontSize}
+          fontWeight={props.myFontWeight}
+        />
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    }
-})
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
