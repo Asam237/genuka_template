@@ -46,6 +46,25 @@ export const Items = () => {
       </View>
       <View>
         <Publicity />
+        <View style={[styles.container__header, { marginTop: SPACING.xlarge }]}>
+          <TouchableOpacity onPress={() => null}>
+            <MyText
+              fontSize={14}
+              variant="subTitle"
+              myColor="#504C47"
+              myText="Top Categories"
+            />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => null}>
+            <MyText
+              fontSize={12}
+              variant="subTitle"
+              myColor={COLORS.primaryColor}
+              myFontWeight="bold"
+              myText="SEE ALL"
+            />
+          </TouchableOpacity>
+        </View>
       </View>
     </AppLayout>
   );
