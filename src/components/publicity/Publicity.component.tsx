@@ -6,12 +6,13 @@ import { MyText } from "../myText/MyText.component";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 
-export const Publicity = (props: any) => {
+export const Publicity = (data: any) => {
+  console.log(data.props.background);
   return (
     <View
       style={{
         width: "100%",
-        backgroundColor: COLORS.primaryColor,
+        backgroundColor: `${data.props.background}`,
         height: 150,
         borderRadius: SPACING.xmedium,
         flexDirection: "row",
@@ -32,7 +33,7 @@ export const Publicity = (props: any) => {
             variant="title"
             myColor={COLORS.secondaryColor}
             myFontWeight="bold"
-            myText="30% OFF DURING COVID 19"
+            myText={data.props.title}
             fontSize={17}
             myLineHeight={25}
             marginVertical={2}
