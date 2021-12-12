@@ -4,8 +4,13 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { ROUTES } from "../constants/routes";
 import { COLORS } from "../assets/themes/globla.theme";
 import { LANGUAGES } from "../constants/languages";
+const navigationRef = React.createRef();
 
 const Stack = createStackNavigator();
+
+export function navigate(name: string) {
+  (navigationRef as any).current?.navigate(name);
+}
 
 export const AuthNavigation = () => {
   return (
