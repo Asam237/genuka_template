@@ -4,12 +4,14 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { ROUTES } from "../constants/routes";
 import { COLORS } from "../assets/themes/globla.theme";
 import { LANGUAGES } from "../constants/languages";
+import { MyDrawer } from "./drawer.navigation";
 
 const Stack = createStackNavigator();
 
 export const AuthNavigation = () => {
   return (
     <NavigationContainer>
+      {/* <MyDrawer /> */}
       <Stack.Navigator>
         <Stack.Screen
           name={ROUTES.welcome.name}
@@ -21,6 +23,13 @@ export const AuthNavigation = () => {
         <Stack.Screen
           name={ROUTES.home.name}
           component={ROUTES.home.component}
+          options={{
+            header: () => null,
+          }}
+        />
+        <Stack.Screen
+          name={ROUTES.detail.name}
+          component={ROUTES.detail.component}
           options={{
             header: () => null,
           }}

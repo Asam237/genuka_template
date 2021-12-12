@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import { AppLayout } from "../layout/app.layout";
@@ -9,13 +9,25 @@ import { COLORS, SPACING } from "../../assets/themes/globla.theme";
 import { MyText } from "../../components/myText/MyText.component";
 import { Publicity } from "../../components/publicity/Publicity.component";
 import { PUBLICITY } from "../../services/publicity.services";
+import { Product } from "../../components/product/Product.component";
+import { PRODUCTS } from "../../scripts/products";
 
-export const Items = () => {
+export const Items = (navigation: any) => {
+  const [d, setD]: any = useState([]);
+
+  const toDetail = async (value?: number) => {
+    navigation.navigation.navigate("detailCoffee", (await d) ? [value] : null);
+  };
+
+  useEffect(() => {
+    setD(PRODUCTS);
+  });
+
   return (
     <AppLayout>
       <ScrollView style={{ flexGrow: 1 }}>
         <View style={styles.container__header}>
-          <TouchableOpacity onPress={() => null}>
+          <TouchableOpacity onPress={() => navigation.openDrawer()}>
             <FontAwesomeIcon
               icon={faBars}
               size={20}
@@ -51,7 +63,11 @@ export const Items = () => {
             horizontal={false}
             numColumns={1}
             data={PUBLICITY}
-            renderItem={({ item, index }) => <Publicity props={item} />}
+            renderItem={({ item, index }) => (
+              <TouchableOpacity onPress={() => toDetail(index)}>
+                <Publicity props={item} />
+              </TouchableOpacity>
+            )}
           />
           <View
             style={[styles.container__header, { marginTop: SPACING.xlarge }]}
@@ -74,6 +90,16 @@ export const Items = () => {
               />
             </TouchableOpacity>
           </View>
+          <FlatList
+            style={{ marginTop: 10 }}
+            numColumns={2}
+            data={PRODUCTS}
+            renderItem={({ item, index }) => (
+              <TouchableOpacity onPress={() => toDetail(index)}>
+                <Product props={item} />
+              </TouchableOpacity>
+            )}
+          />
         </View>
       </ScrollView>
     </AppLayout>

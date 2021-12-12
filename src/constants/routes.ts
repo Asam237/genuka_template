@@ -1,3 +1,4 @@
+import { DetailProduct } from "../screens/detailProduct/DetailProduct.screen";
 import { Home } from "../screens/home/Home.screen";
 import { Login } from "../screens/login/Login.screen";
 import { Signup } from "../screens/signup/Signup.screen";
@@ -12,7 +13,8 @@ interface IRoutes {
     welcome: IRouteItem;
     home: IRouteItem;
     login: IRouteItem;
-    signup: IRouteItem
+    signup: IRouteItem;
+    detail: IRouteItem
 }
 
 export const ROUTES: IRoutes = {
@@ -31,5 +33,9 @@ export const ROUTES: IRoutes = {
     signup: {
         name: "signup",
         component: Signup
+    },
+    detail: {
+        name: "detail",
+        component: DetailProduct
     }
 }
