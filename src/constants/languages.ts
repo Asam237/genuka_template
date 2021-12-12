@@ -11,6 +11,9 @@ export const LANGUAGES = {
         password: "password",
         signup: "Sign Up to create an account",
         signupTitle: "Sign Up",
-        mail: "Email"
+        mail: "Email",
+        firstName: "First name",
+        lastName: "Last name",
+        tel: "Mobile"
     }
 }
