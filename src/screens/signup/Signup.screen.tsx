@@ -7,7 +7,9 @@ import {
   Text,
   View,
 } from "react-native";
+import { useRecoilValue } from "recoil";
 import { COLORS, SPACING } from "../../assets/themes/globla.theme";
+import { signupState } from "../../atoms/signup";
 import { MyButton } from "../../components/myButton/MyButton.component";
 import { MyInput } from "../../components/myInput/MyInput.component";
 import { LANGUAGES } from "../../constants/languages";
@@ -16,6 +18,8 @@ import { AppLayout } from "../layout/app.layout";
 export const BUTTON_SIZE = 60;
 
 export const Signup = (navigation: any) => {
+  const signupvalue = useRecoilValue(signupState);
+  console.log("sign up value::::", signupvalue);
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
