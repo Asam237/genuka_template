@@ -13,7 +13,7 @@ export const MyInput = (props: any) => {
           borderRadius: SPACING.xsmall,
         }}
         placeholder={props.myPlaceHolder}
-        onChange={(e: any) => props.onChangeText!(e)}
+        onChangeText={(e: any) => props.onChangeText!(e)}
       />
     </View>
   );
