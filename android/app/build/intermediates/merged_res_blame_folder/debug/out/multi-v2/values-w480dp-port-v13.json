@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/asam/Workspaces/RN/genuka_template/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "/home/asam/Workspaces/RN/genuka_template/frontend/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
                     "source": "/home/asam/.gradle/caches/transforms-3/94ecee73d302f93903038c0fd7a3667d/transformed/material-1.1.0/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",

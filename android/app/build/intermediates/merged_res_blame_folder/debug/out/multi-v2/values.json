@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/asam/Workspaces/RN/genuka_template/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/asam/Workspaces/RN/genuka_template/frontend/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/asam/.gradle/caches/transforms-3/be9076cd4fc3ff6ad98aa6fb277b3148/transformed/jetified-autofill-1.1.0/res/values/values.xml",
@@ -23,23 +23,6 @@
                     }
                 },
                 {
-                    "source": "/home/asam/Workspaces/RN/genuka_template/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "156,262",
-                        "endColumns": "63,68",
-                        "endOffsets": "215,326"
-                    },
-                    "to": {
-                        "startLines": "650,651",
-                        "startColumns": "4,4",
-                        "startOffsets": "41358,41422",
-                        "endColumns": "63,68",
-                        "endOffsets": "41417,41486"
-                    }
-                },
-                {
                     "source": "/home/asam/.gradle/caches/transforms-3/262def0251b4f6c882149d15641ff92b/transformed/jetified-appcompat-resources-1.3.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,29,36,47,74",
@@ -56,6 +39,42 @@
                         "endLines": "4586,4593,4604,6876,6881",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "306651,307036,307633,427973,428243"
+                    }
+                },
+                {
+                    "source": "/home/asam/Workspaces/RN/genuka_template/frontend/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "52",
+                        "endOffsets": "64"
+                    },
+                    "to": {
+                        "startLines": "686",
+                        "startColumns": "4",
+                        "startOffsets": "43877",
+                        "endColumns": "52",
+                        "endOffsets": "43925"
+                    }
+                },
+                {
+                    "source": "/home/asam/Workspaces/RN/genuka_template/frontend/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "180"
+                    },
+                    "to": {
+                        "startLines": "816",
+                        "startColumns": "4",
+                        "startOffsets": "59407",
+                        "endLines": "818",
+                        "endColumns": "12",
+                        "endOffsets": "59533"
                     }
                 },
                 {
@@ -90,23 +109,6 @@
                         "startOffsets": "40058",
                         "endColumns": "49",
                         "endOffsets": "40103"
-                    }
-                },
-                {
-                    "source": "/home/asam/Workspaces/RN/genuka_template/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "52",
-                        "endOffsets": "64"
-                    },
-                    "to": {
-                        "startLines": "686",
-                        "startColumns": "4",
-                        "startOffsets": "43877",
-                        "endColumns": "52",
-                        "endOffsets": "43925"
                     }
                 },
                 {
@@ -179,25 +181,6 @@
                         "endLines": "95,96,180,181,289,290,291,292,293,294,295,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,532,533,534,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,584,585,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,617,653,790,3126,3130,3131,3135,3136,3750,3751,5659,5924,5956,6146,6153",
                         "endColumns": "71,87,68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,57,60,62,56,50,49,60,56,65,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
                         "endOffsets": "5619,5707,11452,11515,18790,18858,18930,19000,19061,19135,19208,33350,33411,33473,33537,33599,33660,33728,33828,33888,33954,34027,34096,34153,34205,34267,34857,34933,34998,35108,35167,35227,35287,35347,35407,35467,35527,35587,35647,35707,35767,35826,35886,35946,36006,36066,36126,36186,36246,36306,36366,36426,36485,36545,36605,36664,36723,36782,36841,36900,36959,37812,37847,38561,38624,38679,38737,38795,38856,38919,38976,39027,39077,39138,39195,39261,39295,39330,39508,41613,57596,212786,212987,213097,213298,213427,255791,255858,365265,380611,382676,391000,391377"
-                    }
-                },
-                {
-                    "source": "/home/asam/Workspaces/RN/genuka_template/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "180"
-                    },
-                    "to": {
-                        "startLines": "816",
-                        "startColumns": "4",
-                        "startOffsets": "59407",
-                        "endLines": "818",
-                        "endColumns": "12",
-                        "endOffsets": "59533"
                     }
                 },
                 {
@@ -274,6 +257,23 @@
                         "endLines": "24,4422,5697,5786",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "1334,297130,367383,372594"
+                    }
+                },
+                {
+                    "source": "/home/asam/Workspaces/RN/genuka_template/frontend/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "156,262",
+                        "endColumns": "63,68",
+                        "endOffsets": "215,326"
+                    },
+                    "to": {
+                        "startLines": "650,651",
+                        "startColumns": "4,4",
+                        "startOffsets": "41358,41422",
+                        "endColumns": "63,68",
+                        "endOffsets": "41417,41486"
                     }
                 },
                 {

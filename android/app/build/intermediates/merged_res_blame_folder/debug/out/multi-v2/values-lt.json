@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/asam/Workspaces/RN/genuka_template/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
+            "outputFile": "/home/asam/Workspaces/RN/genuka_template/frontend/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
             "map": [
                 {
                     "source": "/home/asam/.gradle/caches/transforms-3/5646db46e2cfb43e7b3d42f3054c498c/transformed/core-1.5.0/res/values-lt/values-lt.xml",

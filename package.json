@@ -37,7 +37,8 @@
     "react-native-toast-message": "^1.6.0",
     "react-native-vector-icons": "^9.0.0",
     "react-navigation": "^4.4.4",
-    "react-navigation-material-bottom-tabs": "^2.3.4"
+    "react-navigation-material-bottom-tabs": "^2.3.4",
+    "recoil": "^0.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
