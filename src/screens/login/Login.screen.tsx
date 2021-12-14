@@ -1,15 +1,31 @@
 import React from "react";
 import { Text, SafeAreaView, View, StatusBar, StyleSheet } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import { COLORS, SPACING } from "../../assets/themes/globla.theme";
 import { MyButton } from "../../components/myButton/MyButton.component";
 import { MyInput } from "../../components/myInput/MyInput.component";
 import { MyText } from "../../components/myText/MyText.component";
 import { LANGUAGES } from "../../constants/languages";
-import { AppLayout } from "../layout/app.layout";
 import { BUTTON_SIZE } from "../signup/Signup.screen";
+import { Form, Formik } from "formik";
 
 const HEADER_HEIGHT = 180;
+
+const initialValues = {
+  username: "asam",
+  password: "123456",
+};
+
+let submit = (value: any) => {
+  if (
+    value.username === initialValues.username &&
+    value.password == initialValues.password
+  ) {
+    console.log("Success !", value);
+  } else {
+    console.log("Informations not valid");
+  }
+};
 
 export const Login = (navigation: any) => {
   const toSignup = () => {
@@ -33,44 +49,60 @@ export const Login = (navigation: any) => {
           myText={LANGUAGES.welcome.subTitle}
         />
       </View>
-      <View style={styles.container__items}>
-        <MyInput myPlaceHolder={LANGUAGES.login.username} />
-        <MyInput
-          myMarginTop={SPACING.xlarge}
-          myPlaceHolder={LANGUAGES.login.password}
-        />
-        <View
-          style={{
-            width: SPACING.full,
-            flexDirection: "row",
-            height: 50,
-            marginTop: SPACING.large,
-          }}
-        >
-          <MyButton
-            myBorderRadius={BUTTON_SIZE / 2}
-            myNavigation={() => navigation.navigation.navigate("home")}
-            myButtonColor={COLORS.primaryColor}
-            myButtonTextColor={COLORS.secondaryColor}
-            myButtonText={LANGUAGES.login.login}
-          />
-        </View>
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            marginHorizontal: SPACING.small,
-          }}
-        >
-          <View style={styles.container__line} />
-          <MyText myText="Or" myMarginHorizontal={10} myMarginVertical={10} />
-          <View style={styles.container__line} />
-        </View>
-        <TouchableOpacity onPress={() => toSignup()}>
-          <MyText myVariant="normal" myText={LANGUAGES.login.signup} />
-        </TouchableOpacity>
-      </View>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={(value: any) => submit(value)}
+      >
+        {({ handleChange, handleSubmit }) => (
+          <View style={styles.container__items}>
+            <MyInput
+              myOnChangeText={handleChange("username")}
+              myPlaceHolder={LANGUAGES.login.username}
+            />
+            <MyInput
+              myMarginTop={SPACING.xlarge}
+              myPlaceHolder={LANGUAGES.login.password}
+              myOnChangeText={handleChange("password")}
+            />
+            <View
+              style={{
+                width: SPACING.full,
+                flexDirection: "row",
+                height: 50,
+                marginTop: SPACING.large,
+              }}
+            >
+              <MyButton
+                myBorderRadius={BUTTON_SIZE / 2}
+                // myNavigation={() => navigation.navigation.navigate("home")}
+                myNavigation={() => handleSubmit()}
+                myButtonColor={COLORS.primaryColor}
+                myButtonTextColor={COLORS.secondaryColor}
+                myButtonText={LANGUAGES.login.login}
+              />
+            </View>
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                marginHorizontal: SPACING.small,
+              }}
+            >
+              <View style={styles.container__line} />
+              <MyText
+                myText="Or"
+                myMarginHorizontal={10}
+                myMarginVertical={10}
+              />
+              <View style={styles.container__line} />
+            </View>
+            <TouchableOpacity onPress={() => toSignup()}>
+              <MyText myVariant="normal" myText={LANGUAGES.login.signup} />
+            </TouchableOpacity>
+          </View>
+        )}
+      </Formik>
     </SafeAreaView>
   );
 };

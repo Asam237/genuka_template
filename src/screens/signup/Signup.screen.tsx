@@ -14,7 +14,7 @@ import { MyButton } from "../../components/myButton/MyButton.component";
 import { MyInput } from "../../components/myInput/MyInput.component";
 import { LANGUAGES } from "../../constants/languages";
 import { Formik } from "formik";
-import AppLayout from "../layout/app.layout";
+import { AppLayout } from "../layout/app.layout";
 
 export const BUTTON_SIZE = 60;
 
@@ -27,9 +27,6 @@ let initialValues = {
   birth_date: "",
   other: "",
 };
-
-// const [inputValue, setInputValue]: any = useRecoilState(signupState);
-// console.log("sign up value::::", inputValue);
 
 const submit = async (value: any) => {};
 
