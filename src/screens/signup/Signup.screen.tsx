@@ -13,8 +13,8 @@ import { signupState } from "../../atoms/signup";
 import { MyButton } from "../../components/myButton/MyButton.component";
 import { MyInput } from "../../components/myInput/MyInput.component";
 import { LANGUAGES } from "../../constants/languages";
-import { AppLayout } from "../layout/app.layout";
 import { Formik } from "formik";
+import AppLayout from "../layout/app.layout";
 
 export const BUTTON_SIZE = 60;
 
@@ -31,17 +31,7 @@ let initialValues = {
 // const [inputValue, setInputValue]: any = useRecoilState(signupState);
 // console.log("sign up value::::", inputValue);
 
-const submit = async (value: any) => {
-  await setInputValue(() => {
-    value.firstname,
-      value.lastname,
-      value.email,
-      value.tel,
-      value.sex,
-      value.birh_date,
-      value.other;
-  });
-};
+const submit = async (value: any) => {};
 
 export const Signup = (navigation: any) => {
   return (
