@@ -7,27 +7,25 @@ import { MyInput } from "../../components/myInput/MyInput.component";
 import { MyText } from "../../components/myText/MyText.component";
 import { LANGUAGES } from "../../constants/languages";
 import { BUTTON_SIZE } from "../signup/Signup.screen";
-import { Form, Formik } from "formik";
+import { Formik } from "formik";
+const navigationRef = React.createRef();
 
 const HEADER_HEIGHT = 180;
 
-const initialValues = {
-  username: "asam",
-  password: "123456",
-};
-
-let submit = (value: any) => {
-  if (
-    value.username === initialValues.username &&
-    value.password == initialValues.password
-  ) {
-    console.log("Success !", value);
-  } else {
-    console.log("Informations not valid");
-  }
-};
-
 export const Login = (navigation: any) => {
+  const initialValues = {
+    username: "",
+    password: "",
+  };
+
+  let submit = async (value: any) => {
+    if (value.username === "asam" && value.password == "123456") {
+      console.log("Success !", value);
+      await navigation.navigation.navigate("home");
+    } else {
+      console.log("Informations not valid");
+    }
+  };
   const toSignup = () => {
     return navigation.navigation.navigate("signup");
   };
