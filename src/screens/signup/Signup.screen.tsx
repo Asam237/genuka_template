@@ -15,22 +15,34 @@ import { MyInput } from "../../components/myInput/MyInput.component";
 import { LANGUAGES } from "../../constants/languages";
 import { Formik } from "formik";
 import { AppLayout } from "../layout/app.layout";
+import { AuthService } from "../../services/auth.service";
 
 export const BUTTON_SIZE = 60;
 
-let initialValues = {
-  firstname: "",
-  lastname: "",
-  email: "",
-  tel: "",
-  sex: "",
-  birth_date: "",
-  other: "",
-};
-
-const submit = async (value: any) => {};
-
 export const Signup = (navigation: any) => {
+  let initialValues = {
+    email: "",
+    tel: "",
+    firstname: "",
+    lastname: "",
+    password: "",
+    company_id: "",
+    fromApi: true,
+  };
+
+  const submit = async (values: any) => {
+    AuthService.register(
+      values.email,
+      values.tel,
+      values.firstname,
+      values.lastname,
+      values.password,
+      values.company_id,
+      values.fromApi
+    );
+    await navigation.navigation.navigate("login");
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -66,11 +78,6 @@ export const Signup = (navigation: any) => {
                   onChangeText={handleChange("password")}
                   myMarginTop={SPACING.xlarge}
                   myPlaceHolder={LANGUAGES.login.tel}
-                />
-                <MyInput
-                  onChangeText={handleChange("sex")}
-                  myMarginTop={SPACING.xlarge}
-                  myPlaceHolder={LANGUAGES.login.password}
                 />
                 <View
                   style={{
