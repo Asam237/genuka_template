@@ -8,7 +8,7 @@ import { MyText } from "../../components/myText/MyText.component";
 import { LANGUAGES } from "../../constants/languages";
 import { BUTTON_SIZE } from "../signup/Signup.screen";
 import { Formik } from "formik";
-import { AuthService } from "../../services/auth.service";
+import { loginService } from "../../services/auth.service";
 const navigationRef = React.createRef();
 
 const HEADER_HEIGHT = 180;
@@ -21,7 +21,8 @@ export const Login = (navigation: any) => {
   };
 
   let submit = async (value: any) => {
-    AuthService.login(value.email, value.password);
+    await loginService(value.email, value.password);
+    await navigation.navigation.navigate("home");
     // if (value.username === "asam" && value.password == "123456") {
     //   console.log("Success !", value);
     //   await navigation.navigation.navigate("home");
