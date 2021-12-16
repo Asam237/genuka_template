@@ -8,6 +8,7 @@ import { MyText } from "../../components/myText/MyText.component";
 import { LANGUAGES } from "../../constants/languages";
 import { BUTTON_SIZE } from "../signup/Signup.screen";
 import { Formik } from "formik";
+import { AuthService } from "../../services/auth.service";
 const navigationRef = React.createRef();
 
 const HEADER_HEIGHT = 180;
@@ -16,15 +17,17 @@ export const Login = (navigation: any) => {
   const initialValues = {
     username: "",
     password: "",
+    fromApi: true,
   };
 
   let submit = async (value: any) => {
-    if (value.username === "asam" && value.password == "123456") {
-      console.log("Success !", value);
-      await navigation.navigation.navigate("home");
-    } else {
-      console.log("Informations not valid");
-    }
+    AuthService.login(value.email, value.password);
+    // if (value.username === "asam" && value.password == "123456") {
+    //   console.log("Success !", value);
+    //   await navigation.navigation.navigate("home");
+    // } else {
+    //   console.log("Informations not valid");
+    // }
   };
   const toSignup = () => {
     return navigation.navigation.navigate("signup");
@@ -54,13 +57,13 @@ export const Login = (navigation: any) => {
         {({ handleChange, handleSubmit }) => (
           <View style={styles.container__items}>
             <MyInput
-              myOnChangeText={handleChange("username")}
+              onChangeText={handleChange("email")}
               myPlaceHolder={LANGUAGES.login.username}
             />
             <MyInput
               myMarginTop={SPACING.xlarge}
               myPlaceHolder={LANGUAGES.login.password}
-              myOnChangeText={handleChange("password")}
+              onChangeText={handleChange("password")}
             />
             <View
               style={{

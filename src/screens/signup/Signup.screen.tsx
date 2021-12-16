@@ -9,13 +9,12 @@ import {
 } from "react-native";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { COLORS, SPACING } from "../../assets/themes/globla.theme";
-import { signupState } from "../../atoms/signup";
 import { MyButton } from "../../components/myButton/MyButton.component";
 import { MyInput } from "../../components/myInput/MyInput.component";
 import { LANGUAGES } from "../../constants/languages";
 import { Formik } from "formik";
 import { AppLayout } from "../layout/app.layout";
-import { AuthService } from "../../services/auth.service";
+import { registerService } from "../../services/auth.service";
 
 export const BUTTON_SIZE = 60;
 
@@ -30,16 +29,18 @@ export const Signup = (navigation: any) => {
     fromApi: true,
   };
 
-  const submit = async (values: any) => {
-    AuthService.register(
-      values.email,
-      values.tel,
-      values.firstname,
-      values.lastname,
-      values.password,
-      values.company_id,
-      values.fromApi
+  const submit = async (value: any) => {
+    await registerService(
+      value.email,
+      value.tel,
+      value.firstname,
+      value.lastname,
+      value.password,
+      value.company_id,
+      value.fromApi
     );
+
+    console.log(value);
     await navigation.navigation.navigate("login");
   };
 
